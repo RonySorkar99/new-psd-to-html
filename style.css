@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Source+Sans+Pro:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  font-family: 'Source sans pro', sans-serif;
+}
+/* bassick css*/
+
+a{
+   
+}
+a,
+a:hover,
+a:focus{
+    text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.container::before,
+.container:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+.col-20{
+    float: left;
+    width: 20%;
+    padding: 0 15px;
+}
+.col-25{
+    float: left;
+    width: 25%;
+    padding: 0 15px;
+}
+.col-25A{
+    float: left;
+    width: 25%;
+    padding: 0;
+}
+
+.col-50{
+    float: left;
+    width: 50%;
+    padding: 0 15px;
+}
+.col-50R{
+    float: right;
+    width: 50%;
+    padding: 0 15px;
+}
+.col-80{
+    float: left;
+    width: 80%;
+    padding: 0 15px;
+}
+.col-100{
+    float: left;
+    width: 100%;
+    padding: 0 15px;
+}
+/* End bassick css*/
+
+/* cusotme css*/
+/* start top-bar*/
+.top-bar{
+    height: 40px;
+    line-height: 40px;
+    background-color: #e0dbdb;
+}
+
+.social-icon{
+    float: right;
+}
+.social-icon i{
+    color: #506a85;
+    font-size: 14px;
+    margin-left: 20px;
+    transition: all 0.3s;
+}
+.social-icon i:hover{
+  transform: scale(1.5);
+  color: #4f136b;
+}
+.contact-info{
+    font-size: 14px;
+    color: #3e4042;
+}
+.contact-info span{
+    margin-right: 28px;
+    margin-left: 8px;
+}
+/* End top-bar*/
+
+/*start header*/
+
+header{
+    height: 100px;
+   line-height: 100px;
+}
+
+.logo{
+    max-width: 100%;
+    height: auto;
+    margin-top: 8px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.main-menu{
+    list-style: none; 
+}
+.main-menu li{
+    display: inline-block;
+    margin-left: 18px;
+       
+}
+.main-menu li a{
+    color: #222;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 18px;
+}
+.main-menu li a:hover{
+    color: #00bc9c;
+}
+.serch i{
+    font-size: 22px;
+    color: #0b3763;
+    cursor: pointer;
+}
+/*End header*/
+
+.home{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./imgs/grwds.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.contend{
+   margin-top: 220px;
+}
+.contend h1{
+    font-size: 38px;
+    font-weight: 700;
+    color: 1d1d1d;
+    margin-bottom: 30px;
+}
+.contend p{
+    font-size: 20px;
+    color: #787878;
+    font-weight: 700;
+    line-height: 1.70rem;
+    margin-bottom: 35px;
+}
+
+.home-batton {
+    height: 50px;
+    width: 180px;
+    line-height: 50px;
+    padding-left: 27px;
+    background-color: #10c9c3;
+    display: inline-block;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all 0.2s;
+}
+.home-batton:hover{
+    background-color: #c91010;
+}
+/* End home section*/
+
+/* start about section */
+.about{
+    background-color: #fff;
+}
+.about-title{
+    text-align: center;
+    padding: 95px 0;
+}
+.about-title h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: #1d1d1d;
+    margin-bottom: 30px;
+}
+.about-title h2 span{
+    color: crimson;
+}
+
+.about-title p{
+    font-size: 18px;
+    color: #787878;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+/*end about section*/
+
+/*start skill sectinon*/
+.skill{
+    background-color: #d4dde2;
+}
+.skill-title{
+    text-align: center;
+    padding-top: 65px;
+}
+.skill-title h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: #1d1d1d;
+    margin-bottom: 50px;
+}
+.skill-title h2 span{
+    color: crimson;
+}
+.tietle{
+    margin-bottom: 25px;
+    margin-left: 15px;
+}
+.tietle h3{
+    font-size: 22px;
+    font-weight: 600;
+    color: #1d1d1d;
+}
+
+
+.bars{
+    margin: 15px;
+}
+.bars .infor{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    justify-content: space-between;
+}
+.infor span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.bars .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.bars .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #10c9c3;
+  }
+  .bars .html::before{
+      width: 95%;
+  }
+  .bars .css::before{
+    width: 80%;
+}
+.bars .java::before{
+    width: 30%;
+}
+.bars .jquery::before{
+    width: 35%;
+}
+.bars .boots::before{
+    width: 50%;
+}
+
+.skill-img img{
+    width: 100%;
+    size: cover;
+    margin-left: 30px;
+    border-radius: 5px;
+    
+}
+
+/*End skill sectinon*/
+
+/*Sart rivew section*/
+.review{
+    background-color:#10c9c3;
+    padding: 90px 0;
+}
+.review-item{
+  display: flex;
+  align-items: center;
+}
+.review-item i{
+    font-size: 32px;
+    margin: 0 24px;
+    color: #fff;
+}
+.review-text p{
+   margin: 12px 0;
+   font-size: 18px;
+   color: #fff;
+}
+/*End rivew section*/
+
+/*start project section*/
+.project{
+  background-color: #f5f5f5;
+}
+.project-content{
+  
+}
+.project-imgs{
+    display: flex;
+    position: relative;
+}
+
+.project-imgs::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease;
+    left: 0;
+    top: 0;
+}
+.project-imgs::after{
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    border: 1px solid #ddd;
+    top: 4%;
+    left: 22px;
+    opacity: 0;
+    visibility: hidden;
+}
+.project-imgs img{
+    margin: 0;
+    width: 100%;
+    height: 250px;
+    size: cover;
+    object-fit: cover;
+}
+.project-imgs .hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: table;
+    opacity: 0;
+    visibility: hidden;
+    transition: 400ms ease;
+}
+.project-imgs .hover i{
+    font-size: 35px;
+    color: crimson;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    transition: .3s ease;
+    transform: translateY(20px);
+}
+.project-imgs:hover::before{
+  opacity: 0.5;
+  visibility: visible;
+}
+.project-imgs:hover::after{
+    opacity: 1;
+    visibility: visible;
+  }
+  .project-imgs:hover .hover{
+    opacity: 1;
+    visibility: visible;
+  }
+  .project-imgs:hover .hover i{
+    transform: translateY(0px);
+    visibility: visible;
+  }
+
+.lode{
+      margin-left:50%;
+  }
+  .lode p{
+      text-transform: uppercase;
+      font-size: 16px;
+      color: #00bc9c;
+      padding: 12px 0;
+  }
+/*end project section*/
+
+.work{
+    background-color: rgb(109, 94, 94);
+}
+.work-title{
+    text-align: center;
+    padding: 95px 0;
+}
+.work-title h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: #1d1d1d;
+    margin-bottom: 30px;
+}
+.work-title h2 span{
+    color: crimson;
+}
+
+.work-title p{
+    font-size: 18px;
+    color: #291616;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+.video-box{
+    width: 100%;
+    height: auto;
+}
